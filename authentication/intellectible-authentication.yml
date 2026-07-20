@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.intellectible.com/docs/api-reference/intro
+docs: https://docs.intellectible.com/docs/api-reference/intro
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiKeyAuth
+  type: apiKey
+  in: header
+  parameter_name: Authorization
+  scheme_note: >-
+    The API key value is sent directly in the Authorization request header
+    (e.g. "Authorization: API_KEY") - it is not prefixed with "Bearer". API keys
+    are created in the app under the Accounts section and are scoped to project
+    data, so they must be kept secret.
+  key_management: https://app.intellectible.com
+  sources:
+  - https://docs.intellectible.com/docs/api-reference/intro
+notes: >-
+  No OpenAPI/Swagger specification is published for the Intellectible Public API,
+  so this profile was captured from the provider's API reference documentation
+  rather than derived from a spec. Only a single API-key scheme is documented;
+  no OAuth2, OpenID Connect, or scope surface is present, so scopes/ is not
+  applicable.
