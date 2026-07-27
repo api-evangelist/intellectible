@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.intellectible.com/docs/api-reference/code-execution-sdk/
+description: >-
+  First-party Intellectible client libraries. The Code Execution SDK is
+  documented by the provider for use inside Intellectible code nodes, where it
+  is "pre-installed and auto-authenticated" - it exposes a LibraryClient
+  (list/upload/download/delete project files) and a DatabaseClient (create
+  tables, run SQL, insert/update/delete rows, CSV import against the project
+  PostgreSQL database). At probe time (2026-07-19) the documented package names
+  did NOT resolve on the public npm or PyPI registries (registry HTTP status
+  recorded below), consistent with them being distributed inside the code
+  execution runtime rather than published for public install.
+packages:
+- language: javascript
+  registry: npm
+  name: "@intellectible/execution-sdk"
+  install: npm install @intellectible/execution-sdk
+  official: true
+  public_registry: false
+  registry_status: 404
+  registry_url: https://registry.npmjs.org/@intellectible%2Fexecution-sdk
+  note: Documented in the Code Execution SDK reference; not found on public npm.
+- language: python
+  registry: pypi
+  name: intellectible_execution
+  install: pip install intellectible_execution
+  official: true
+  public_registry: false
+  registry_status: 404
+  registry_url: https://pypi.org/pypi/intellectible_execution/json
+  note: Documented in the Code Execution SDK reference; not found on public PyPI.

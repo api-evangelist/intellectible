@@ -1,20 +1,64 @@
 aid: intellectible
 name: Intellectible
-description: Intellectible is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Intellectible is an AI build platform for enterprise service providers -
+  federal and state government contractors (GovCon), professional services
+  firms, and economic development organizations - that turns portals, emails,
+  CRM data, and market signals into structured opportunity, proposal, pricing,
+  and knowledge workflows. Its horizontal build environment (project workspaces,
+  visual workflows, document libraries, PostgreSQL databases, applications,
+  pages, jobs, and queues) is exposed programmatically through the Intellectible
+  Public API and a Code Execution SDK, letting teams run workflows synchronously,
+  manage Library files, and query project databases directly from code.
 url: https://raw.githubusercontent.com/api-evangelist/intellectible/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://intellectible.com/
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Government
+- GovCon
+- Proposals
+- CRM
+- Workflow Automation
+- Pricing
+- Knowledge Management
+- Enterprise Software
+- Professional Services
+apis:
+- name: Intellectible Public API
+  description: >-
+    RESTful API for programmatic access to Intellectible projects - list and run
+    workflows synchronously, and manage Library files (create signed upload URLs,
+    upload bytes, finalize, retrieve, list, and delete). Authenticated with an
+    API key passed in the Authorization header.
+  humanURL: https://docs.intellectible.com/docs/api-reference/intro
+  baseURL: https://app.intellectible.com/api/publicv1
+  properties:
+  - type: APIReference
+    url: https://docs.intellectible.com/docs/api-reference/intro
+  - type: Authentication
+    url: authentication/intellectible-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +67,32 @@ maintainers:
 common:
 - type: Website
   url: https://intellectible.com/
+- type: DeveloperPortal
+  url: https://docs.intellectible.com/
+- type: Documentation
+  url: https://docs.intellectible.com/docs/guides/overview
+- type: APIReference
+  url: https://docs.intellectible.com/docs/api-reference/intro
+- type: GettingStarted
+  url: https://docs.intellectible.com/docs/editor-tutorials/tutorial-0-get-started
+- type: Blog
+  url: https://intellectible.com/blog/
+- type: Login
+  url: https://app.intellectible.com
+- type: Authentication
+  url: authentication/intellectible-authentication.yml
+- type: Packages
+  url: packages/intellectible-packages.yml
+- type: SDKs
+  url: packages/intellectible-packages.yml
+- type: Conventions
+  url: conventions/intellectible-conventions.yml
+- type: MCPServer
+  url: mcp/intellectible-mcp.yml
+- type: DomainSecurity
+  url: security/intellectible-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

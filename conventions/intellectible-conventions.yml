@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.intellectible.com/docs/api-reference/intro
+description: >-
+  Cross-cutting request/response conventions for the Intellectible Public API,
+  captured from the provider's API reference. No OpenAPI specification is
+  published, so these were read from the documented endpoints rather than
+  derived from a spec.
+base_url: https://app.intellectible.com/api/publicv1
+api_style: REST over HTTPS, JSON requests and responses
+authentication:
+  scheme: API key in the Authorization header (raw key, no Bearer prefix)
+  docs: https://docs.intellectible.com/docs/api-reference/intro
+  detail: authentication/intellectible-authentication.yml
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header or parameter is documented for the Public API.
+    Workflow execution is exposed as a synchronous run-and-wait call.
+pagination:
+  documented: false
+  note: >-
+    The Library "list files" operation returns file metadata for a project; the
+    docs do not specify a cursor/offset pagination contract.
+versioning:
+  scheme: uri-path
+  current: publicv1
+  in_path: https://app.intellectible.com/api/publicv1
+  workflow_version_selector: >-
+    Individual workflow runs accept an optional "version" body field to pin a
+    workflow version; it defaults to the latest published version.
+error_envelope:
+  shape: '{ success: boolean, result: { outputs: object }, statusCode: number }'
+  note: >-
+    The synchronous workflow run returns a JSON envelope with a boolean success
+    flag, a result object carrying workflow outputs, and an HTTP-style
+    statusCode. No RFC 9457 problem+json error contract is documented.
+upload_pattern:
+  style: three-step signed upload
+  steps:
+  - Create a document record and obtain a signed storage upload URL.
+  - PUT the file bytes directly to the signed storage link.
+  - Confirm/finalize the completed upload.
+  docs: https://docs.intellectible.com/docs/api-reference/library/upload
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/intellectible-authentication.yml

@@ -1,0 +1,30 @@
+# Intellectible
+
+> Intellectible is an AI build platform for enterprise service providers - federal and state government contractors (GovCon), professional services firms, and economic development organizations. It turns portals, emails, CRM data, and market signals into structured opportunity, proposal, pricing, and knowledge workflows, and exposes its build environment (workflows, Library files, PostgreSQL databases) through a REST Public API and a Code Execution SDK.
+
+## APIs
+
+- [Intellectible Public API](https://docs.intellectible.com/docs/api-reference/intro): REST API to list and run workflows synchronously and manage Library files; base URL https://app.intellectible.com/api/publicv1; API-key auth via the Authorization header.
+
+## Docs
+
+- [Developer portal](https://docs.intellectible.com/): guides, tutorials, editor reference, and API reference.
+- [Guides overview](https://docs.intellectible.com/docs/guides/overview): core concepts and getting started.
+- [Get started tutorial](https://docs.intellectible.com/docs/editor-tutorials/tutorial-0-get-started): first workflow walkthrough.
+- [API reference - Call a workflow](https://docs.intellectible.com/docs/api-reference/call-workflow/): POST /projects/:projectId/workflows/:workflowId/runsync.
+- [API reference - Library upload](https://docs.intellectible.com/docs/api-reference/library/upload): three-step signed upload.
+- [API reference - Get & list Library files](https://docs.intellectible.com/docs/api-reference/library/get-and-list-files): file metadata retrieval.
+- [Code Execution SDK](https://docs.intellectible.com/docs/api-reference/code-execution-sdk/): LibraryClient and DatabaseClient for use inside code nodes.
+
+## Artifacts
+
+- [Authentication profile](authentication/intellectible-authentication.yml): API-key auth model.
+- [Packages / SDKs](packages/intellectible-packages.yml): first-party Code Execution SDK libraries.
+- [Conventions](conventions/intellectible-conventions.yml): cross-cutting request/response semantics.
+- [MCP server (candidate)](mcp/intellectible-mcp.yml): derived candidate tool list.
+
+## Company
+
+- [Website](https://intellectible.com/): product and engine overview.
+- [Blog](https://intellectible.com/blog/): customer and product announcements.
+- [App / login](https://app.intellectible.com): the build environment and API-key management.

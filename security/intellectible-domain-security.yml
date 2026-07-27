@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: intellectible.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Sep 29 15:10:53 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.intellectible.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Oct 10 16:12:31 2026 GMT
+  hsts: true
+  hsts_max_age: 31556926
+- host: app.intellectible.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Oct 16 19:05:10 2026 GMT
+  hsts: true
+  hsts_max_age: 31556926
+domains:
+- domain: intellectible.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
