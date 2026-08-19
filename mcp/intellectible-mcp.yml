@@ -2,11 +2,9 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: https://docs.intellectible.com/docs/api-reference/intro
-description: >-
-  No official hosted or remote MCP server was found for Intellectible (no
-  entry in the public MCP registries and none referenced in the provider's
-  developer documentation as of 2026-07-19). The tool list below is a CANDIDATE
-  derived from the documented Public API operations - one tool per documented
+description: No official hosted or remote MCP server was found for Intellectible (no entry in the public
+  MCP registries and none referenced in the provider's developer documentation as of 2026-07-19). The
+  tool list below is a CANDIDATE derived from the documented Public API operations - one tool per documented
   operation - not a published server.
 server:
   name: intellectible
@@ -17,9 +15,7 @@ tools:
   description: List the workflows available in a project.
   source_operation: Intellectible Public API - list workflows
 - name: run_workflow_sync
-  description: >-
-    Invoke a workflow and wait for the result in a single call
-    (POST /projects/:projectId/workflows/:workflowId/runsync).
+  description: Invoke a workflow and wait for the result in a single call (POST /projects/:projectId/workflows/:workflowId/runsync).
   source_operation: Intellectible Public API - run a workflow (sync)
 - name: create_upload_url
   description: Create a document record and return a signed storage upload URL.
@@ -36,3 +32,9 @@ tools:
 - name: delete_library_file
   description: Delete a Library file.
   source_operation: Intellectible Public API - delete Library file
+deployment:
+  mode: none
+  verified: derived
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
