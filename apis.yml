@@ -45,6 +45,10 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 image: https://intellectible.com/
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: firebase
 tags:
 - Company
 - Artificial Intelligence
@@ -52,9 +56,9 @@ tags:
 - GovCon
 - Proposals
 - CRM
-- Workflow-Automation
+- Workflow Automation
 - Pricing
-- Knowledge-Management
+- Knowledge Management
 - Enterprise Software
 - Professional Services
 tags_raw:
@@ -69,6 +73,8 @@ tags_raw:
 - Knowledge Management
 - Enterprise Software
 - Professional Services
+- Workflow-Automation
+- Knowledge-Management
 apis:
 - name: Intellectible Public API
   description: >-
