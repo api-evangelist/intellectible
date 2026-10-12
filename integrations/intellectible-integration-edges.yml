@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/intellectible/integrations
+- https://n8n.io/integrations/intellectible/
+- https://composio.dev/toolkits/intellectible
+- https://monid.ai/tools/intellectible
+checked:
+- https://composio.dev/toolkits/intellectible
+- https://monid.ai/tools/intellectible
+- https://n8n.io/integrations/intellectible/
+- https://zapier.com/apps/intellectible/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
